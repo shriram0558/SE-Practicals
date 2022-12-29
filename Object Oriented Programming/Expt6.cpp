@@ -20,9 +20,9 @@ class Personal_info {
         telephone_number = a;
     }
     
-    friend bool checkbyname(Personal_info p1, Personal_info p2);
-    friend bool checkbydob(Personal_info p1, Personal_info p2);
-    friend bool checkbytelephone(Personal_info p1, Personal_info p2);
+    friend bool comparename(Personal_info p1, Personal_info p2);
+    friend bool comparedob(Personal_info p1, Personal_info p2);
+    friend bool comparetelephone(Personal_info p1, Personal_info p2);
 
     void set_data() {
         cout << "Enter the Name: ";
