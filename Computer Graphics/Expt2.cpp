@@ -11,7 +11,7 @@ void scanline(int *xcord, int *ycord, int n){
 
     for(int i=0; i<n; i++) {
         
-        ymax = min(ymax, ycord[i]);
+        ymax = max(ymax, ycord[i]);
         ymin = min(ymin, ycord[i]);
 
         dx = xcord[i+1] - xcord[i];
