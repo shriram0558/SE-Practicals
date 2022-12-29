@@ -40,12 +40,10 @@ int main(){
     }
 
     f.seekg(0);
-    delete[] s;
-
-    Student* o = new Student[n];
+    
     for(int i=0; i<n; i++){
-        f.read((char*)&o[i], sizeof(o[i]));
-        o[i].display();
+        f.read((char*)&s[i], sizeof(s[i]));
+        s[i].display();
         cout << endl;
     }
     f.close();
