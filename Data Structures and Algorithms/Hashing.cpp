@@ -36,6 +36,7 @@ class Map {
                 hashTable[ind] = data(client_id, telephone);
                 return true;
             }
+            ind = (ind + i) % TableSize;
         }
         return false;
     }
@@ -46,6 +47,7 @@ class Map {
             if(hashTable[ind].client_id == client_id){
                 return hashTable[ind];
             }
+            ind = (ind + i) % TableSize;
         }
         return data();
     }
@@ -57,6 +59,7 @@ class Map {
                 hashTable[ind] = data();
                 return true;
             }
+            ind = (ind + i) % TableSize;
         }
         return false;
     }
