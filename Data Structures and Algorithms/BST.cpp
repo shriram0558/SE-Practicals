@@ -102,6 +102,8 @@ class BST {
         else {
             node->left = insertUtil(node->left, d);
         }
+
+        return node;
     }
 };
 

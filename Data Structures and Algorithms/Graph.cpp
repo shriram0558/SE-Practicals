@@ -27,11 +27,11 @@ void bfs(int u, vector<vector<int>>& adj, vector<bool>& vis){
         cout << node << " ";
 
         for(int v : adj[u]){
-        if(!vis[v]){
-            q.push(v);
-            vis[v] = true;
+            if(!vis[v]){
+                q.push(v);
+                vis[v] = true;
+            }
         }
-    }
     }
 }
 
